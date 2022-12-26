@@ -1,0 +1,542 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2CF49B28D4CF99749E985A9E /* Pods_VKClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C51E055877532304789C9A6 /* Pods_VKClient.framework */; };
+		A5E75D82295A2DB7004050AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D81295A2DB7004050AA /* AppDelegate.swift */; };
+		A5E75D84295A2DB7004050AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D83295A2DB7004050AA /* SceneDelegate.swift */; };
+		A5E75D86295A2DB7004050AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D85295A2DB7004050AA /* ViewController.swift */; };
+		A5E75D89295A2DB7004050AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E75D87295A2DB7004050AA /* Main.storyboard */; };
+		A5E75D8B295A2DB9004050AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5E75D8A295A2DB9004050AA /* Assets.xcassets */; };
+		A5E75D8E295A2DB9004050AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5E75D8C295A2DB9004050AA /* LaunchScreen.storyboard */; };
+		A5E75D9B295A2EF3004050AA /* FriendTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D9A295A2EF3004050AA /* FriendTableTableViewController.swift */; };
+		A5E75D9D295A2F50004050AA /* Friends.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D9C295A2F50004050AA /* Friends.swift */; };
+		A5E75DA2295A2FD6004050AA /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75DA1295A2FD6004050AA /* Session.swift */; };
+		A5E75DA4295A3011004050AA /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75DA3295A3011004050AA /* Service.swift */; };
+		A5E75DA7295A30EE004050AA /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A5E75DA6295A30EE004050AA /* Alamofire */; };
+		A5E75DAA295A321E004050AA /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A5E75DA9295A321E004050AA /* Realm */; };
+		A5E75DAC295A321E004050AA /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A5E75DAB295A321E004050AA /* RealmSwift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		244E9F84B007E5B7F703B515 /* Pods-VKClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKClient.release.xcconfig"; path = "Target Support Files/Pods-VKClient/Pods-VKClient.release.xcconfig"; sourceTree = "<group>"; };
+		2C51E055877532304789C9A6 /* Pods_VKClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		51421CAA6E81A169DBEE8D14 /* Pods-VKClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKClient.debug.xcconfig"; path = "Target Support Files/Pods-VKClient/Pods-VKClient.debug.xcconfig"; sourceTree = "<group>"; };
+		A5E75D7E295A2DB7004050AA /* VKClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A5E75D81295A2DB7004050AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A5E75D83295A2DB7004050AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A5E75D85295A2DB7004050AA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A5E75D88295A2DB7004050AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A5E75D8A295A2DB9004050AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A5E75D8D295A2DB9004050AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A5E75D8F295A2DB9004050AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5E75D9A295A2EF3004050AA /* FriendTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendTableTableViewController.swift; sourceTree = "<group>"; };
+		A5E75D9C295A2F50004050AA /* Friends.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Friends.swift; sourceTree = "<group>"; };
+		A5E75DA1295A2FD6004050AA /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		A5E75DA3295A3011004050AA /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A5E75D7B295A2DB7004050AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E75DAC295A321E004050AA /* RealmSwift in Frameworks */,
+				A5E75DAA295A321E004050AA /* Realm in Frameworks */,
+				A5E75DA7295A30EE004050AA /* Alamofire in Frameworks */,
+				2CF49B28D4CF99749E985A9E /* Pods_VKClient.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AA5A864ACD2A3BFB7D68B54 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				51421CAA6E81A169DBEE8D14 /* Pods-VKClient.debug.xcconfig */,
+				244E9F84B007E5B7F703B515 /* Pods-VKClient.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A5E75D75295A2DB7004050AA = {
+			isa = PBXGroup;
+			children = (
+				A5E75D95295A2E13004050AA /* App,Scene */,
+				A5E75D80295A2DB7004050AA /* VKClient */,
+				A5E75D7F295A2DB7004050AA /* Products */,
+				8AA5A864ACD2A3BFB7D68B54 /* Pods */,
+				E3F661E265826F8526BE02FE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A5E75D7F295A2DB7004050AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75D7E295A2DB7004050AA /* VKClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A5E75D80295A2DB7004050AA /* VKClient */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75D99295A2E8E004050AA /* Structure */,
+				A5E75D98295A2E84004050AA /* Session */,
+				A5E75D97295A2E73004050AA /* Service */,
+				A5E75D96295A2E5D004050AA /* Controllers */,
+				A5E75D87295A2DB7004050AA /* Main.storyboard */,
+				A5E75D8A295A2DB9004050AA /* Assets.xcassets */,
+				A5E75D8C295A2DB9004050AA /* LaunchScreen.storyboard */,
+				A5E75D8F295A2DB9004050AA /* Info.plist */,
+			);
+			path = VKClient;
+			sourceTree = "<group>";
+		};
+		A5E75D95295A2E13004050AA /* App,Scene */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75D81295A2DB7004050AA /* AppDelegate.swift */,
+				A5E75D83295A2DB7004050AA /* SceneDelegate.swift */,
+			);
+			path = "App,Scene";
+			sourceTree = "<group>";
+		};
+		A5E75D96295A2E5D004050AA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75D85295A2DB7004050AA /* ViewController.swift */,
+				A5E75D9A295A2EF3004050AA /* FriendTableTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A5E75D97295A2E73004050AA /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75DA3295A3011004050AA /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A5E75D98295A2E84004050AA /* Session */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75DA1295A2FD6004050AA /* Session.swift */,
+			);
+			path = Session;
+			sourceTree = "<group>";
+		};
+		A5E75D99295A2E8E004050AA /* Structure */ = {
+			isa = PBXGroup;
+			children = (
+				A5E75D9C295A2F50004050AA /* Friends.swift */,
+			);
+			path = Structure;
+			sourceTree = "<group>";
+		};
+		E3F661E265826F8526BE02FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C51E055877532304789C9A6 /* Pods_VKClient.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A5E75D7D295A2DB7004050AA /* VKClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5E75D92295A2DB9004050AA /* Build configuration list for PBXNativeTarget "VKClient" */;
+			buildPhases = (
+				729B882F7F0EAA5C159DF0AD /* [CP] Check Pods Manifest.lock */,
+				A5E75D7A295A2DB7004050AA /* Sources */,
+				A5E75D7B295A2DB7004050AA /* Frameworks */,
+				A5E75D7C295A2DB7004050AA /* Resources */,
+				C494C10FBB260F84607FBDA8 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VKClient;
+			packageProductDependencies = (
+				A5E75DA6295A30EE004050AA /* Alamofire */,
+				A5E75DA9295A321E004050AA /* Realm */,
+				A5E75DAB295A321E004050AA /* RealmSwift */,
+			);
+			productName = VKClient;
+			productReference = A5E75D7E295A2DB7004050AA /* VKClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A5E75D76295A2DB7004050AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					A5E75D7D295A2DB7004050AA = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = A5E75D79295A2DB7004050AA /* Build configuration list for PBXProject "VKClient" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A5E75D75295A2DB7004050AA;
+			packageReferences = (
+				A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire.git" */,
+				A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */,
+			);
+			productRefGroup = A5E75D7F295A2DB7004050AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A5E75D7D295A2DB7004050AA /* VKClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A5E75D7C295A2DB7004050AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E75D8E295A2DB9004050AA /* LaunchScreen.storyboard in Resources */,
+				A5E75D8B295A2DB9004050AA /* Assets.xcassets in Resources */,
+				A5E75D89295A2DB7004050AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		729B882F7F0EAA5C159DF0AD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VKClient-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C494C10FBB260F84607FBDA8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKClient/Pods-VKClient-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VKClient/Pods-VKClient-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VKClient/Pods-VKClient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A5E75D7A295A2DB7004050AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5E75D86295A2DB7004050AA /* ViewController.swift in Sources */,
+				A5E75DA4295A3011004050AA /* Service.swift in Sources */,
+				A5E75D82295A2DB7004050AA /* AppDelegate.swift in Sources */,
+				A5E75DA2295A2FD6004050AA /* Session.swift in Sources */,
+				A5E75D9B295A2EF3004050AA /* FriendTableTableViewController.swift in Sources */,
+				A5E75D9D295A2F50004050AA /* Friends.swift in Sources */,
+				A5E75D84295A2DB7004050AA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A5E75D87295A2DB7004050AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E75D88295A2DB7004050AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A5E75D8C295A2DB9004050AA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A5E75D8D295A2DB9004050AA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A5E75D90295A2DB9004050AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A5E75D91295A2DB9004050AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A5E75D93295A2DB9004050AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51421CAA6E81A169DBEE8D14 /* Pods-VKClient.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W723XDRZA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VKClient/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Demyan-Gorchakov.VKClient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A5E75D94295A2DB9004050AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 244E9F84B007E5B7F703B515 /* Pods-VKClient.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = W723XDRZA4;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = VKClient/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "Demyan-Gorchakov.VKClient";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A5E75D79295A2DB7004050AA /* Build configuration list for PBXProject "VKClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E75D90295A2DB9004050AA /* Debug */,
+				A5E75D91295A2DB9004050AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5E75D92295A2DB9004050AA /* Build configuration list for PBXNativeTarget "VKClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5E75D93295A2DB9004050AA /* Debug */,
+				A5E75D94295A2DB9004050AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A5E75DA6295A30EE004050AA /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			productName = Alamofire;
+		};
+		A5E75DA9295A321E004050AA /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			productName = Realm;
+		};
+		A5E75DAB295A321E004050AA /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A5E75D76295A2DB7004050AA /* Project object */;
+}
