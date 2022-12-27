@@ -24,7 +24,7 @@ class  Service {
         
         AF.request(url, method: .post, parameters: parameters).response { res in
             if let data = res.data {
-                if let friends = try? JSONDecoder().decode(ResponseFriend.self, from: data).response.items {
+                if let friends = try? JSONDecoder().decode([Friends].self, from: data).response {
                     completion(friends)
                 }
             }
@@ -33,7 +33,7 @@ class  Service {
     
     private func saveToRealm(friends: [Friends]) {
         let realm = try! Realm()
-        
+
         try! realm.write({
             realm.add(friends)
         })

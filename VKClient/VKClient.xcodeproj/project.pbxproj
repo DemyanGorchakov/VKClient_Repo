@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2CF49B28D4CF99749E985A9E /* Pods_VKClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C51E055877532304789C9A6 /* Pods_VKClient.framework */; };
+		A583FCAF295B137000755E6A /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A583FCAE295B137000755E6A /* Model.swift */; };
 		A5E75D82295A2DB7004050AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D81295A2DB7004050AA /* AppDelegate.swift */; };
 		A5E75D84295A2DB7004050AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D83295A2DB7004050AA /* SceneDelegate.swift */; };
 		A5E75D86295A2DB7004050AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E75D85295A2DB7004050AA /* ViewController.swift */; };
@@ -27,6 +28,7 @@
 		244E9F84B007E5B7F703B515 /* Pods-VKClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKClient.release.xcconfig"; path = "Target Support Files/Pods-VKClient/Pods-VKClient.release.xcconfig"; sourceTree = "<group>"; };
 		2C51E055877532304789C9A6 /* Pods_VKClient.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VKClient.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		51421CAA6E81A169DBEE8D14 /* Pods-VKClient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VKClient.debug.xcconfig"; path = "Target Support Files/Pods-VKClient/Pods-VKClient.debug.xcconfig"; sourceTree = "<group>"; };
+		A583FCAE295B137000755E6A /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		A5E75D7E295A2DB7004050AA /* VKClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VKClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5E75D81295A2DB7004050AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5E75D83295A2DB7004050AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,8 +64,15 @@
 				51421CAA6E81A169DBEE8D14 /* Pods-VKClient.debug.xcconfig */,
 				244E9F84B007E5B7F703B515 /* Pods-VKClient.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		A583FCAD295B135C00755E6A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A583FCAE295B137000755E6A /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		A5E75D75295A2DB7004050AA = {
@@ -88,6 +97,7 @@
 		A5E75D80295A2DB7004050AA /* VKClient */ = {
 			isa = PBXGroup;
 			children = (
+				A583FCAD295B135C00755E6A /* Model */,
 				A5E75D99295A2E8E004050AA /* Structure */,
 				A5E75D98295A2E84004050AA /* Session */,
 				A5E75D97295A2E73004050AA /* Service */,
@@ -202,8 +212,8 @@
 			);
 			mainGroup = A5E75D75295A2DB7004050AA;
 			packageReferences = (
-				A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire.git" */,
-				A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */,
+				A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift" */,
 			);
 			productRefGroup = A5E75D7F295A2DB7004050AA /* Products */;
 			projectDirPath = "";
@@ -281,6 +291,7 @@
 				A5E75D9B295A2EF3004050AA /* FriendTableTableViewController.swift in Sources */,
 				A5E75D9D295A2F50004050AA /* Friends.swift in Sources */,
 				A5E75D84295A2DB7004050AA /* SceneDelegate.swift in Sources */,
+				A583FCAF295B137000755E6A /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -502,7 +513,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire.git" */ = {
+		A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
 			requirement = {
@@ -510,7 +521,7 @@
 				kind = branch;
 			};
 		};
-		A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */ = {
+		A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/realm/realm-swift.git";
 			requirement = {
@@ -523,17 +534,17 @@
 /* Begin XCSwiftPackageProductDependency section */
 		A5E75DA6295A30EE004050AA /* Alamofire */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire.git" */;
+			package = A5E75DA5295A30EE004050AA /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
 		};
 		A5E75DA9295A321E004050AA /* Realm */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			package = A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = Realm;
 		};
 		A5E75DAB295A321E004050AA /* RealmSwift */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift.git" */;
+			package = A5E75DA8295A321E004050AA /* XCRemoteSwiftPackageReference "realm-swift" */;
 			productName = RealmSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
