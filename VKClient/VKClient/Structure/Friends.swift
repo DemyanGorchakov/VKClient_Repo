@@ -13,11 +13,13 @@ struct ResponseFriend: Decodable {
     var response: Friends
 }
 
-struct Friends: Decodable {
-    var items: [Friend]
+struct Friends: Object, Decodable {
+    @Persisted(primaryKey: true) var id: ObjectId
+    @Persisted var items: List<Friend>
 }
 
 struct Friend: Object, Decodable {
+    @Persisted(primaryKey: true) var id: ObjectId
     @Persisted var id: Int
     @Persisted var firstName: String
     @Persisted var lastName: String

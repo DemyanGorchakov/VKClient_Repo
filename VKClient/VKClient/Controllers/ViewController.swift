@@ -4,7 +4,7 @@
 //
 //  Created by Демьян Горчаков on 26.12.2022.
 //
-
+import WebKit
 import UIKit
 
 class LoginVKController: UIViewController {
